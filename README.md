@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### 📘 Turf Booking System
 
 A full-stack web application built for managing turf bookings efficiently. This system allows users to view turf availability, book slots, manage their reservations, and receive confirmation — designed with simplicity and usability in mind for college sports and recreational purposes.
@@ -29,3 +30,6 @@ To streamline the process of booking college turfs for students and faculty by r
 
 ---
 
+=======
+# Turf-Booking-System
+>>>>>>> 6abe5cc907b98889365b5d9b84a4a7cd518892e2
