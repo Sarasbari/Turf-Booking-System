@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Search Turfs - Turf Booking</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header class="mb-3">
+		<nav class="container">
+			<div class="logo">
+				<h1>Turf Booking</h1>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a class="active" href="search.html">Search</a></li>
+				<li><a href="tournaments.html">Tournaments</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="login.html" id="loginLink">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<section class="mb-3">
+			<h2 class="mb-2">Find a Turf</h2>
+			<div class="input-group">
+				<input id="inputLocation" type="text" placeholder="City or Area" />
+				<select id="selectType">
+					<option value="">Any Type</option>
+					<option value="FOOTBALL">Football</option>
+					<option value="CRICKET">Cricket</option>
+					<option value="BASKETBALL">Basketball</option>
+					<option value="TENNIS">Tennis</option>
+					<option value="BADMINTON">Badminton</option>
+					<option value="MULTI_SPORT">Multi-sport</option>
+				</select>
+				<input id="minPrice" type="number" placeholder="Min Price" min="0" />
+				<input id="maxPrice" type="number" placeholder="Max Price" min="0" />
+				<select id="minRating">
+					<option value="">Min Rating</option>
+					<option>4.5</option>
+					<option>4.0</option>
+					<option>3.5</option>
+					<option>3.0</option>
+				</select>
+				<select id="selectSort">
+					<option value="rating,desc">Top Rated</option>
+					<option value="pricePerHour,asc">Price: Low to High</option>
+					<option value="pricePerHour,desc">Price: High to Low</option>
+				</select>
+				<button class="btn" id="btnSearch">Search</button>
+			</div>
+		</section>
+
+		<section>
+			<div id="results" class="grid"></div>
+			<div id="noResults" class="mt-3" style="display:none;">No turfs found. Try different filters.</div>
+			<div class="flex justify-between items-center mt-3">
+				<button class="btn ghost" id="prevPage">Prev</button>
+				<div id="pageInfo"></div>
+				<button class="btn ghost" id="nextPage">Next</button>
+			</div>
+		</section>
+	</main>
+
+	<script src="js/auth.js"></script>
+	<script src="js/search.js"></script>
+</body>
+</html>
+
+
